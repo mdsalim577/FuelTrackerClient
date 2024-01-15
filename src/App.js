@@ -9,7 +9,7 @@ const App = () => {
   const [fuelData, setFuelData] =  useState([
     // Dummy record for testing
     {
-      vehicleNumber: 'ABC123',
+      vehicleNumber: 'ABC1234',
       date: '2022-01-15',
       fuelAmount: 50,
       price: 100,
