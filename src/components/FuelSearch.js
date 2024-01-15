@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Input, Button } from 'antd';
+import { Input, Button, Row, Col } from 'antd';
 
 const FuelSearch = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -9,9 +9,9 @@ const FuelSearch = ({ onSearch }) => {
   };
 
   return (
-    <div style={{ marginBottom: '16px' }}>
+    <div className="fuel-search">
       <Input
-        placeholder="Enter vehicle number"
+        placeholder="Search by vehicle number"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />

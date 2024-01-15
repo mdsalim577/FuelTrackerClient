@@ -9,7 +9,7 @@ const App = () => {
   const [fuelData, setFuelData] =  useState([
     // Dummy record for testing
     {
-      vehicleNumber: 'ABC1234',
+      vehicleNumber: 'ABC123',
       date: '2022-01-15',
       fuelAmount: 50,
       price: 100,
@@ -46,8 +46,8 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>Fuel Tracker App</h1>
+    <div className="app-container">
+      <h1 className="app-heading">Fuel Tracker</h1>
       <FuelSearch onSearch={handleSearch} />
       <FuelList data={fuelData} onEdit={handleEdit} onDelete={handleDelete} onView={handleView} />
       <FuelAdd onFinish={handleAdd} />
